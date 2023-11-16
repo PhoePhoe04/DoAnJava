@@ -1,0 +1,56 @@
+SmartPhone, SP0, 1, 1, 1, 1, 1
+SmartPhone, SP1, iPhone 15 Pro Max, Titan, 512GB, 29H, 30000000
+SmartPhone, SP2, iPhone 15 Pro, White, 256GB, 23H, 27500000
+SmartPhone, SP3, iPhone 14 Pro Max, Black, 512GB, 4025mAh, 28600000
+SmartPhone, SP4, iPhone 14 Pro, White, 128GB,3225mAh, 21000000
+SmartPhone, SP5, iPhone 13 Pro Max, Pink, 256GB, 3225mAh, 23000000
+SmartPhone, SP6, iPhone 13 Pro, DarkGreen, 256GB, 2985mAh, 17000000
+SmartPhone, SP7, Samsung Galaxy S22 5G, Blask, 128GB, 3700mAh, 11500000
+SmartPhone, SP8, Samsung Galaxy Z Flip4, Pink, 125GB, 3700mAh, 11900000
+SmartPhone, SP9, Samsung Galaxy S23, DarkGreen, 256GB, 4000mAh, 18590000
+SmartPhone, SP10, Samsung Galaxy Z Fold4, DarkRed, 256GB, 4025mAh, 22900000
+SmartPhone, SP11, Samsung Galaxy A04, Black, 64GB, 2025mAh, 2300000
+SmartPhone, SP12, Samsung Galaxy A04s, Black, 128GB, 2125mAh, 4100000
+SmartPhone, SP13, OPPO Reno10 5G, Blue, 256GB, 3000mAh, 10200000
+SmartPhone, SP14, OPPO Reno8 T 4G, Organge, 256GB, 3000mAh, 7100000
+SmartPhone, SP15, OPPO A18 4GB, Black, 128GB, 2500mAh, 600000
+SmartWatch, SW1, Apple Watch Series 7, Blue, 32GB, 18h, 75000000
+SmartWatch, SW2, Samsung Galaxy Watch 4, Black, 16GB, 24h, 4000000
+SmartWatch, SW3, Garmin Venu 2, Black, 8GB, 11d, 11000000
+SmartWatch, SW4, Fitbit Versa 3, Pink, 8GB, 6d, 6000000
+SmartWatch, SW5, HuaWei Watch GT 2 Pro, Orange, 4GB, 14d, 4500000
+SmartWatch, SW6, Fossil Gen 5, Black, 8GB, 24h, 5800000
+SmartWatch, SW7, TicWatch Pro 3, Gray, 8GB, 72h, 1270000
+SmartWatch, SW8, Amazfit GTS 2, Black, 4GB, 7d, 2000000
+SmartWatch, SW9, Google Pixel Watch, Blue, 32GB, 1d, 9790000 
+SmartWatch, SW10, Xiaomi Mi Watch, White, 4GB, 16d, 1500000
+SmartWatch, SW11, Oppo Watch, White, 8GB, 36h, 1190000
+SmartWatch, SW12, Honor MagicWatch 2, Black, 4GB, 14d, 3590000
+SmartWatch, SW13, TicWatch E3, Yellow, 8GB, 48h, 2990000
+SmartWatch, SW14, Amazfit Bip U Pro, Black, 4GB, 9d, 1190000
+SmartWatch, SW15, HuaWei Watch Fit, Light Pink, 4GB, 10d, 2590000
+SmartWatch, SW16, Fitbit Sense, Gray, 8GB, 6d, 2990000
+SmartWatch, SW17, Samsung Galaxy Watch Active 2, Black, 4GB, 60h, 7990000
+SmartWatch, SW18, Mobvoi TicWatch C2+, Black, 1GB, 48h, 4590000
+SmartWatch, SW19, Amazfit GTR 2, Black, 3GB, 14d, 1190000
+SmartWatch, SW20, Garmin Forerunner 945, Dark Pink, 16GB, 36h, 6990000 
+Tablet, SP1, Huawei MatePad Pro, Black, 512GB, 7250mAh, 12800000
+Tablet, SP2, Huawei MatePad 11, Gray, 256GB, 7250mAh, 13800000
+Tablet, SP3, Huawei MatePad 10.8, Black, 128GB, 7500mAh, 15000000
+Tablet, SP4, Huawei MatePad T10s, Red, 64GB, 5100mAh, 4090000
+Tablet, SP5, Huawei MediaPad M6, White, 256GB, 7500mAh, 11800000 
+Tablet, SP6, Xiaomi Mi Pad 5 Pro, Green, 256GB, 8720mAh, 6890000
+Tablet, SP7, Xiaomi Mi Pad 5, Light Pink, 256GB, 8720mAh, 5890000
+Tablet, SP8, Xiaomi Mi Pad 4 Plus, Black, 128GB, 8620mAh, 7000000
+Tablet, SP9, Xiaomi Mi Pad 4, Silver, 64GB, 6000mAh, 6000000
+Tablet, SP10, Xiaomi Mi Pad 3, Blonde, 128GB, 6600mAh, 5000000
+Tablet, SP11, iPad Gen 9 2021, Black, 64GB, 4500mAh, 7790000
+Tablet, SP12, iPad Gen 10 2022, Blue, 64GB, 4620mAh, 11190000
+Tablet, SP13, iPad mini 6 2021, Grey, 64GB, 4620mAh, 11900000
+Tablet, SP14, iPad Pro 12.9 2022 M2, Sliver, 128GB, 5000mAh, 32990000
+Tablet, SP15, iPad Air 5 2022, Pink, 64GB, 4620mAh, 17090000
+Tablet, SP16, Samsung Galaxy Tab A9, Grey, 64GB, 4020mAh, 3790000
+Tablet, SP19, Samsung Galaxy Tab S9 FE, DarkGreen, 128GB, 4620mAh, 9790000
+Tablet, SP17, Samsung Galaxy Tab S9 FE Plus, Sliver, 128GB, 4620mAh, 13990000
+Tablet, SP18, Samsung Galaxy Tab S9, Grey, 256GB, 4810mAh, 17790000
+Tablet, SP20, Samsung Galaxy Tab A7 Lite, White, 64GB, 4200mAh, 3890000
