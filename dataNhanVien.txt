@@ -1,1 +1,3 @@
-QuanLy, QL01, Phuc Duy, 01/01/2004, Soc Trang
+QuanLy, QL1, Huynh Phuc Duy, 01/01/2004, TP.HCM, 10000000
+QuanLyKho, QLK1, Quach Hoang Kha, 01/01/2004, TP.HCM, 12000000
+BanHang, BH1, Lai The Thanh, 01/01/2004, TP.HCM, 8000000

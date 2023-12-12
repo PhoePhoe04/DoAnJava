@@ -1,0 +1,5 @@
+KM1, FIRST, 1, 0.3
+KM2, Friend, 3, 0.15
+KM3, Luck, 2, 0.2
+KM4, NICE, 4, 0.1
+KM5, GREAT, 5, 0.05

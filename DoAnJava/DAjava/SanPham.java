@@ -1,13 +1,12 @@
 package DAjava;
 
 
-public abstract class SanPham implements iNhapHang, Comparable<SanPham>{
+public abstract class SanPham {
     protected String LSP, maSP, tenSP, mauSac, boNho, pin;
     protected int donGia;
     
 
-    public SanPham() {
-    }
+    public SanPham() {}
     public SanPham(String LSP, String maSP, String tenSP, String mauSac, String boNho, String pin, int donGia){
         this.LSP = LSP;
         this.maSP = maSP;
@@ -69,17 +68,13 @@ public abstract class SanPham implements iNhapHang, Comparable<SanPham>{
         this.donGia = donGia;
     }
 
-    @Override
+    
     public abstract void nhap();
-    @Override
     public abstract void xuat();
+    public abstract void tinhNang();
 
     @Override
     public String toString(){
         return this.LSP+ ", "+ this.maSP+ ", "+ this.tenSP+ ", "+ this.mauSac+ ", "+ this.boNho+ ", "+ this.pin+ ", "+ donGia;
-    }
-    @Override
-    public int compareTo(SanPham o){
-        return this.getMaSP().compareTo(o.getMaSP());
     }
 }

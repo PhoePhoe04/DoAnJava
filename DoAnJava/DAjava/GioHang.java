@@ -1,62 +1,52 @@
 package DAjava;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.ArrayList;
 
 
 public class GioHang{
-    ArrayList<SanPham> gioHang;
+    private ArrayList<SanPham> gioHang;
+    private String maGH;
+    private Kho kho = new Kho();
 
-    public GioHang() {
-        gioHang = new ArrayList<>();
+    public GioHang(){
+        this.gioHang = new ArrayList<>();
+        this.maGH = "GH";
+        this.kho.docDataTuFile();
     }
 
+    // Getter
     public ArrayList<SanPham> getDanhSachSP() {
         return gioHang;
     }
+    public String getMaGH(){
+        return this.maGH;
+    }
 
+    // Setter
+    public void setMaGH(int sizeDSGio){
+        this.maGH = "GH"+ sizeDSGio;
+    }
     public void setDanhSachSP(ArrayList<SanPham> gioHang) {
         this.gioHang = gioHang;
     }
+    
     public void themVaoGio(SanPham sp){
         this.gioHang.add(sp);
     }
-    public void themVaoGio(String maOrten){
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("dataSanPham.txt"));
-            String line;
-            while((line = br.readLine()) != null){
-                String[] parts = line.split(",");
-                String LSP = parts[0].trim();
-                String maSP = parts[1].trim();
-                String tenSP = parts[2].trim();
-                String mauSac = parts[3].trim();
-                String boNho = parts[4].trim();
-                String pin = parts[5].trim();
-                int donGia = Integer.parseInt(parts[6].trim());
-                if(maSP.equals(maOrten)){
-                    if(LSP.equals("SmartPhone")){
-                        this.gioHang.add(new SmartPhone(maSP, tenSP, mauSac, boNho, pin, donGia));
-                    }else if(LSP.equals("SmartWatch")){
-                        this.gioHang.add(new SmartWatch(maSP, tenSP, mauSac, boNho, pin, donGia));
-                    }else if(LSP.equals("Tablet")){
-                        this.gioHang.add(new Tablet(maSP, tenSP, mauSac, boNho, pin, donGia));
-                    }
-                }
-            }
-            br.close();
-        } catch (Exception e) {
-            // TODO: handle exception
-            e.printStackTrace();
+    public void themVaoGio(String maSP){
+        if(kho.laySPtheoMa(maSP) != null){
+            this.gioHang.add(kho.laySPtheoMa(maSP));
         }
     }
+   
     public void inGioHang(){
-        System.out.println("------Gio Hang------");
-        for (SanPham sanPham : gioHang) {
+        System.out.println("======================================================= GIO HANG ======================================================"+" "+this.maGH);
+        System.out.printf("%-20s%-15s%-40s%-15s%-10s%-10s%s\n","LSP","Ma San Pham","Ten San Pham","Mau Sac","Bo Nho", "PIN", "Don Gia");
+        System.out.println();
+        for (SanPham sanPham : this.gioHang) {
             sanPham.xuat();
         }
-        System.out.println("--------------------");
+        System.out.println("=======================================================================================================================\n");
     }
     public void inTenSPvaDonGia(){
         for (SanPham sanPham : gioHang) {
@@ -65,11 +55,16 @@ public class GioHang{
     }
 
     public void xoaKhoiGioHang(int vitri){
-        this.gioHang.remove(vitri);
+        if(vitri >= 0 && vitri < gioHang.size()){
+            this.gioHang.remove(vitri);
+        }
+        else{
+            System.out.println("Vi tri ban nhap vao la so am hoac vi tri lon hon so luong trong gio hang.");
+        }
     }
-    public void xoaKhoiGioHang(String maorten){
+    public void xoaKhoiGioHang(String maSP){
         for (SanPham sanPham : gioHang) {
-            if(sanPham.getMaSP().equals(maorten) || sanPham.getTenSP().equals(maorten)){
+            if(sanPham.getMaSP().equals(maSP)){
                 this.gioHang.remove(sanPham);
             }
         }
@@ -91,5 +86,41 @@ public class GioHang{
             count++;
         }
         return count;
+    }
+
+    public String layAllMaSP(){
+        String allMaSP = "";
+        for (SanPham sanPham : gioHang) {
+            allMaSP += ", "+ sanPham.getMaSP();
+        }
+        return allMaSP;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((gioHang == null) ? 0 : gioHang.hashCode());
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+        return true;
+        if (obj == null)
+        return false;
+        if (getClass() != obj.getClass())
+        return false;
+        GioHang other = (GioHang) obj;
+        if (gioHang == null) {
+            if (other.gioHang != null)
+            return false;
+        } else if (!gioHang.equals(other.gioHang))
+        return false;
+        return true;
+    }
+    @Override
+    public String toString(){
+        return this.maGH+ this.layAllMaSP()+ "\n";
     }
 }

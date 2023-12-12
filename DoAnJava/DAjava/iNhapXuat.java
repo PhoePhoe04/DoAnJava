@@ -1,6 +1,6 @@
 package DAjava;
 
-public interface iNhapHang {
+public interface iNhapXuat {
     void nhap();
     void xuat();
 }
